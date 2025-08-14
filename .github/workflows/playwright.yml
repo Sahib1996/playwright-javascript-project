@@ -8,6 +8,7 @@ jobs:
 
     env:
       # Map GitHub Secrets to env vars used by your tests (.env not committed on CI)
+      env:
       SAUCE_USER: ${{ secrets.SAUCE_USER }}
       SAUCE_PASS: ${{ secrets.SAUCE_PASS }}
       FIRST_NAME: ${{ secrets.FIRST_NAME }}
