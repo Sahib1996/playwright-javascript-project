@@ -1,0 +1,25 @@
+{
+  "name": "playwright-javascript-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "playwright install",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:chromium:headed": "playwright test --project=chromium --headed",
+    "test:login": "playwright test --grep @login",
+    "test:cart": "playwright test --grep @cart",
+    "test:inventory": "playwright test --grep @inventory",
+    "test:checkout": "playwright test --grep @checkout",
+    "test:product": "playwright test --grep @product",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:trace": "playwright test --trace on",
+    "test:inspect": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "dotenv": "^16.4.5"
+  }
+}
